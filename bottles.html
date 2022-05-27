@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <body>
+            <script>
+                //let for variables that will be changed
+                let word = "bottles";
+                let count = 3;
+
+                while(count > 0) {
+                    
+                    if (count == 1) {
+                        word = "bottle";
+                    }
+                    
+                    console.log(count + " " + word + " of beer on the wall");
+                    console.log(count + " " + word + " of beer,");
+                    console.log("Take one down, pass it around,")
+
+                    count = count - 1;
+
+                    /* to take the 'bottles' string without the final plural 's' character use: word.slice(0,-1);
+                    */
+                    if (count > 0) {
+                        if (count == 1) {
+                            console.log(count + " " + word.slice(0, -1) + " of beer on the wall.");
+                        }
+                    } else {
+                        word = "bottles";
+                        console.log("No more " + word + " of beer on the wall.")
+                    }
+                }
+            </script>
+        </body>
+    </head>
+</html>
