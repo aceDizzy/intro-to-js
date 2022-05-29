@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <body>
+            <script>
+                function bmi(name, weight) {
+                    if (weight < 18.5) {
+                        console.log(name + ", you are underweight.");
+                    } else if (weight >= 18.5 & weight <= 24.9) {
+                        console.log(name + ", you are healthy.");
+                    } else if (weight >= 25 & weight <= 29.9) {
+                        console.log(name + ", you are overweight.");
+                    } else if (weight >= 30) {
+                        console.log(name + ", you are obese.");
+                    } else {
+                        console.log("Invalid!");
+                    }
+                }
+                bmi("Anna", 24);
+            </script>
+        </body>
+    </head>
